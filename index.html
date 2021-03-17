@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css"> 
     <title>Document</title>
 </head>
 <body>
@@ -45,8 +46,66 @@
     </main>
 
     <!-- slider container-->
-    <section class="slider">
+    <section class="dream-team-slider">
+
         <h2>Project dream team</h2>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                     <!-- Slides -->
+                    <div class="swiper-slide">
+
+                        <div class="slide-img">
+                            <img src="img/front-end.jpg" alt="front-end developer">
+                        </div>
+    
+                        <div class="slider-text">
+                            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus enim sit non eu, leo euismod enim. Ornare feugiat metus convallis ut proin gravida. Ac mauris et bibendum pharetra ac rhoncus.”</p>
+                            <p class="title">Anna Vavryshyn <br> 
+                                <span>(front-end developer)</span>
+                            </p>
+                        </div>
+    
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="slide-img">
+                            <img src="img/pm.jpg" alt="project lead">
+                        </div>
+    
+                        <div class="slider-text">
+                            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus enim sit non eu, leo euismod enim. Ornare feugiat metus convallis ut proin gravida. Ac mauris et bibendum pharetra ac rhoncus.”</p>
+                            <p class="title">Petro Vasylykiv <br> 
+                                <span>(project lead)</span>
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="slide-img">
+                            <img src="img/project-manager.jpeg" alt="project manager">
+                        </div>
+    
+                        <div class="slider-text">
+                            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus enim sit non eu, leo euismod enim. Ornare feugiat metus convallis ut proin gravida. Ac mauris et bibendum pharetra ac rhoncus.”</p>
+                            <p class="title">Anton Levko <br> 
+                                <span>(project manager)</span>
+                            </p>
+                        </div>
+
+                    </div>
+      
+                </div>
+
+                <div class="swiper-pagination"></div>
+  
+                <div class="swiper-button-prev"><i class="bi bi-arrow-left-circle"></i></div>
+                <div class="swiper-button-next"><i class="bi bi-arrow-right-circle"></i></div>
+            
+        </div>
 
     </section>
 
@@ -167,6 +226,7 @@
             Project X 2020</p>
     </footer>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="sandbox.js"> </script>
 </body>
 </html>

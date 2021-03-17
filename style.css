@@ -11,6 +11,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+/* video block */
 div.video{
     position: relative;
 }
@@ -35,12 +36,13 @@ video{
     text-align: center; 
     color: #fff;
     padding: 5px auto;
-	line-height: 20px; 
+    line-height: 20px; 
     cursor: pointer;
     z-index: 1;
     outline: none;
 }
 
+/* main article */
 main {
     position: relative;
     top: -120px;
@@ -51,7 +53,6 @@ main {
     background-color: #fff;
     box-shadow: 6px 6px 12px rgba(48, 68, 98, 0.12);
     border-radius: 10px;
-    margin-bottom: 170px;
 }
 
 .main h1{
@@ -71,7 +72,7 @@ main {
 }
 
 .last-para{
-    padding-bottom: 55px;
+    padding-bottom: 100px;
 }
 
 .article{
@@ -86,7 +87,104 @@ main {
     font-weight: 600;
 }
 
+/* slider block */
+section.dream-team-slider{
+    padding: 50px;
+    margin: auto;
+    position: relative;
+    top: -70px;
+}
 
+.slide-img img{
+    border-radius: 50%;
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    filter: drop-shadow(6px 6px 12px rgba(48, 68, 98, 0.12));
+}
+
+.slide-img{
+    text-align: center;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+  }
+
+.slider-text{
+    width: 435px; 
+    text-align: center;
+    margin: auto;
+}
+
+.slider-text p{
+    font-size: 24px;
+    line-height: 27px;
+    height: auto;
+    margin-top: 30px;
+    font-family:'Courier New';
+}
+
+.slider-text .title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 15px;
+}
+
+.slider-text .title span{
+    font-weight: 400;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    display: none;
+}
+
+.swiper-button-prev i,
+.swiper-button-next i{
+    color: #EA157A;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 65px;
+    border-radius: 50%;
+}
+
+.swiper-button-prev i:hover,
+.swiper-button-next i:hover{
+    background-color: #EA157A;
+    color: #F4F9FF;
+    border-radius: 50%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 50px;
+    padding: 0 15px;
+}
+
+
+.swiper-pagination{
+    position: relative;
+    padding-top: 50px;
+}
+
+.swiper-pagination-bullet{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 10px;
+    background-color: #EA157A;
+}
+
+/* project highlights */
 
 section h2{
     font-size: 48px;
@@ -100,11 +198,12 @@ section h2{
     height: auto;
     padding: 50px;
     display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr;  */
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-template-rows: 1fr 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 40px;
+    grid-gap: 2rem 1rem;
+    place-items: center;
+    
+    /* grid-column-gap: 20px;
+    grid-row-gap: 40px; */
 }
 
 .card{
@@ -153,10 +252,7 @@ section h2{
     background: #FFFFFF;
     opacity: 0.8;
     border-radius: 10px;
-    padding-top: 16px;
-    padding-right: 26px;
-    padding-bottom: 26px;
-    padding-left: 33px;
+    padding: 25px 30px;
     text-align: justify;
   }
 
@@ -171,9 +267,10 @@ section h2{
     line-height: 17px;
   }
 
+
   
 
-
+/* footer block */
 footer{
     background: linear-gradient(90deg, #FEB80A 0%, #7FD13B 100%);
     padding-top: 60px;
