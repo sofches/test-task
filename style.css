@@ -6,8 +6,7 @@
 
 body{
     background-color: #E5E5E5;
-    max-width: 100%;
-    width: 1440px; 
+    width: 100%;
     height: auto;
     font-family: 'Montserrat', sans-serif;
 }
@@ -39,6 +38,7 @@ video{
 	line-height: 20px; 
     cursor: pointer;
     z-index: 1;
+    outline: none;
 }
 
 main {
@@ -71,7 +71,7 @@ main {
 }
 
 .last-para{
-    padding-bottom: 30px;
+    padding-bottom: 55px;
 }
 
 .article{
@@ -96,18 +96,20 @@ section h2{
 }
 
 .container{
-    max-width: 100%;
-    padding: 40px;
+    width: 100%;
+    height: auto;
+    padding: 50px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr;  */
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 40px;
 }
 
 .card{
-    width: 433px;
-    height: 433px;
+    width: 400px;
+    height: 400px;
     background: #C4D7FC;
     box-shadow: 6px 6px 12px rgba(48, 68, 98, 0.12);
     border-radius: 10px;
@@ -119,21 +121,21 @@ section h2{
 
 .wrapper{
     border-radius: 10px;
-    padding: 26px;
+    padding: 25px;
     position: relative;
 }
 
 .wrapper img{
     object-fit: cover;
-    width: 381px; 
-    height: 381px; 
+    width: 350px; 
+    height: 350px; 
     border-radius: 10px;
 }
 
 .icons {
     position: absolute;
-    top: 46px;
-    right: 46px;
+    top: 45px;
+    right: 45px;
     z-index: 1;
     color: white;
   }
@@ -146,15 +148,16 @@ section h2{
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 433px;
-    height: 141px;
+    width: 400px;
+    height: 133px;
     background: #FFFFFF;
-    opacity: 0.7;
+    opacity: 0.8;
     border-radius: 10px;
     padding-top: 16px;
     padding-right: 26px;
     padding-bottom: 26px;
     padding-left: 33px;
+    text-align: justify;
   }
 
 .text h4{
