@@ -201,9 +201,6 @@ section h2{
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-gap: 2rem 1rem;
     place-items: center;
-    
-    /* grid-column-gap: 20px;
-    grid-row-gap: 40px; */
 }
 
 .card{
